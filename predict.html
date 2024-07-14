@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet"  href="{{ url_for('static', filename='css/style.css')}}">
+  <title>Brain Tumor Detector</title>
+ 
+
+</head>
+
+
+<body>
+  <div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      Brain Tumor Detector
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="/" >Home</a>
+ 
+  </div>
+</div>
+
+
+<center>
+  <h1>Prediction: {{ result }}</h1>
+
+
+<div class="float-container">
+
+     <! –<div class="float-child">–>
+      <div class="blue"><img src="{{ url_for('upload_img', filename=outfile) }}" ></div>
+    </div></center>
+    
+
+    
+    
+  </div>
+
+ <!-- container finish  -->
+ <br><br>
+
+
+
+ 
+  
+
+  
+    
+
+
+
+
+
+</body>
+</html>
